@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> A4T ✦ </title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+<header id="topbar"> 
+    <span id="topbar-brand"> A4T ✦ </span>
+    <span id="topbar-tagline"> ✧ archive 4 tams ✧ </span>
+    <span id="topbar-clock"></span> 
+</header>
+
+<main id="desktop">
+
+    <div id="icon-column">
+        <div class="desktop-icon" data-app="photobooth" id="icon-photobooth">
+            <div class="icon-graphic">📸</div>
+            <span>PhotoBooth</span>
+        </div>
+    </div>
+
+        <div class="window" id="win-photobooth" data-title="✦ myOS Photobooth ✦">
+      <div class="window-titlebar">
+        <div class="titlebar-dots">
+          <span class="dot dot-close"></span>
+          <span class="dot dot-min"></span>
+          <span class="dot dot-max"></span>
+        </div>
+        <span class="window-title">✦ A4T Photobooth ✦</span>
+      </div>
+      <div class="window-body photobooth-body">
+
+
+        <div id="pb-camera-wrap">
+          <video id="pb-video" autoplay playsinline muted></video>
+          <div id="pb-countdown" class="hidden"></div>
+        </div>
+
+        <div id="pb-controls">
+          <button id="pb-start-btn">📷 Take Strip</button>
+          <button id="pb-save-btn" class="hidden">💾 Save</button>
+        </div>
+        <canvas id="pb-canvas" class="hidden"></canvas>
+
+      </div>
+    </div>
+
+
+</main>
+
+<script src="script.js"></script>
